@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+        <img class="githublogo" src=" ./img/githublogo.png>
+        <meta charset="UTF-8">
+
+        <span title="lamarlofton/codeup-web-excerises"></span>
+    <body>
+        <title>GitHub.html</title>
+       <img class="smaller-image" src="https://www.xconomy.com/wordpress/wp-content/images/2016/05/CodeupLogo.png"></img>
+
+        <h1 class="black-text">Codeup</>
+        <hr
+
+        <form action="/action_page.php">
+            <fieldset>
+                <legend>Personal information:</legend>
+                First name:<br>
+                <input type="text" name="Kent" value="Mickey"><br>
+                Last name:<br>
+                <input type="text" name="Beck" value="Mouse"><br><br>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+        </body>
+
+       <style>
+        .black-text {
+        color: black;
+        }
+
+        .smaller-image {
+            width: 100px;
+        }
+
+        body, html {
+            height: 100%;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Ubuntu, sans-serif;
+            background-color: lightgray;
+        }
+
+         .thin-black-border {
+             border-color: black;
+             border-width: 5px;
+             border-style: solid;
+         }
+
+           .T-border {
+               border: 1px ;
+               width: 100px>
+               color: chartreuse;
+               heigth: 5px;
+               style: solid;
+           }
+
+
+         </style>
+
+        <div>
+       <h1 class="black-text thin-black-border">Codeup's Dev Team</h1>
+       <hr
+          <form>
+           <table class="T-border thin-black-border">
+
+               <tr>
+                   <th>Repositories <span>39</span></th>
+                   <th>People <span>15</span></th>
+                   <th>Teams <span>7</span></th>
+                   <th>Projects <span>0</span></th>
+                   <th><span>Settings</span></th>
+               </tr>
+           </table>
+        </form>
+
+            <ul class="thin-black-border">
+            <li>Kent Beck</li><span>Member 1 Team</span>
+            <li>Codeup Instruction Staff</li><span>Member 1 Team</span>
+                <li>Martin Fowler</li><span>Member 0 Teams</span>
+            </ul>
+
+        </div>
+    </head>
+</html>
+
