@@ -1,0 +1,17 @@
+body {
+    background-color: coral;
+}
+.fancy-header {
+    color: blueviolet; /* single line comment */
+    text-decoration: underline;
+}
+
+/* mouse hover over link (:hover) */
+a:hover {
+    color:blue;
+}
+
+.fancy-header{
+    text-align-all: justify;
+    border: black;
+}
