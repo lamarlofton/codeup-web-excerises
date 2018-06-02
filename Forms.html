@@ -1,57 +1,81 @@
 <!DOCTYPE html>
-<html>
-        <head>
+<html lang="en">
+    <head>
+        <meta chrset="UTF-8">
+        <title>Register With Us</title>
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="brand">Welcome Everyone</h1>
+           <div class="wrapper">
+               <div class="Getting to Know You">
+               </div>
+           </div>
 
-            <body>
+        </div>
 
-                    <title>Register With Us</title>
+    <form class="submission-form">
 
-            <form method="GET" action="https://webhook.site/84bc3b4a-f5d5-4694-a9a4-6470ef1c42f1">
-
-                <label for="email address">Email Address</label>
-                <input id="email address" name="email address" placeholder="Enter Email Address" type="text">
+    <form method="POST" action="https://webhook.site/84bc3b4a-f5d5-4694-a9a4-6470ef1c42f1">
+<p>
+                        <h3>Tell Me About Yourself</h3>
+        <label for="email address">Email Address</label>
+        <input id="email address" name="email address" placeholder="Enter Email Address" type="text">
                 <br>
+        <label for="phone">
+            Telephone
+        </label>
 
-                <label for="pass">Password</label>
-                <input id="pass" name="pass" placeholder="Password" type="password">
-                <br>
+        <input type="tel" id="phone">
 
-                <textarea Bio="comment"></textarea>
+        <label for="pass">Password</label>
+        <input id="pass" name="pass" placeholder="Password" type="password">
+
                 <hr>
-
-                <h1>"How did you hear about us"</h1>
-
-                <input type="button" name="places_1" value="Billboard" checked><br>
-
-                <input type="button" name="places_1" value="Radio Advertisement" checked><br>
-
-                <input type="button" name="places_1" value="Internet Advertisement"><br>
-
-                <input type="button" name="places_1" value="Other" checked><br>
-
-
+        <textarea name="Bio" id="Bio" cols="15" rows="5"
+                  placeholder="Tell Me About Yourself"></textarea>
                 <hr>
+        <header>
+                <h1 class="fancy-header">"How did you hear about us"</h1>
+        </header>
 
-                            <h1>"What web browser are you using?</h1>
+        <input type="button" name="about-us" value="Billboard" checked><br>
 
-                <select name="What web browser are you using?">
+        <input type="button" name="about-us" value="Radio Advertisement" checked><br>
 
-                    <option value="Mac">Safari</option>
-                    <option value="Windows">Chrome</option>
-                    <option value="HP">FireFox</option>
-                    <option value="Dell">Internet Exploer</option>
-                </h1>
+        <input type="button" name="about-us" value="Internet Advertisement"><br>
+
+        <input type="button" name="about-us" value="Other" checked><br>
+
+        <button>Submit Answer</button>
+    </p>
+        <div>
+                <hr>
+        <header>
+                 <h1 class="fancy-header">"What web browser are you using?</h1>
+        </header>
+
+        <select name="What web browser are you using?">
+
+            <option value="0">Select One</option>
+            <option value="Mac">Safari</option>
+            <option value="Windows">Chrome</option>
+            <option value="HP">FireFox</option>
+            <option value="Dell">Internet Exploer</option>
+
                 <br>
+        </select>
+        </div>
 
+               <input type="datetime-local">
 
+                <input type="submit" value="Send" id="sendBtn">
 
-
-                <input type="submit">
-
-            </form>
-            </body>
-
-        </head>
-
+        </form>
+    </form>
+    </body>
 
 </html>
+
+element { background-image: url(http://www.example.com/images/bck.png); }

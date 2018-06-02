@@ -1,0 +1,60 @@
+body {
+    background: url(https://images.pexels.com/photos/984539/pexels-photo-984539.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) repeat-x;
+    background-repeat: round, repeat;
+    }
+
+body {
+    border: 1px solid blue;
+}
+
+
+h1,h3:hover {
+    color:blue;
+    width: initial;
+}
+
+.picture {
+    margin: 50px auto;
+    width: 500px;
+    border: 1px solid #000;
+    padding: 10px;
+    position: relative;
+    animation-name: myanime;
+    animation-duration: 4s;
+
+   /* @keyframes myanime {
+        0% {background-color: #1969B2;}
+        25%{background-color: #77AF00;}
+        50%{background-color: #E74C3C;}
+        75%{background-color: blue;}
+        100% {background-color: #1969B2}ß*/
+
+    }
+
+}
+
+.picture1 {
+    background-color: #77AF00; /* greenish */
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+}
+.picture2 {
+    background-color: #1969B2; /* blueish */
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+}
+
+.picture3 {
+    background-color: #77AF00; /* greenish */
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+}
+.picture4 {
+    background-color: #1969B2; /* blueish */
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+}

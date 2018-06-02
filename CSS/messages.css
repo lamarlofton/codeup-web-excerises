@@ -1,0 +1,40 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    margin: 0;
+    font-family: Arial, Ubuntu, sans-serif;
+    text-indent: 10px;
+
+
+
+}
+
+ /*
+    Anything that should target ALL messages should be below
+ */
+.message {
+    margin: 10px;
+    width: 100% 50%;
+    border-radius: 5px;
+    height: 30px;
+}
+
+ /* Anything specific to info should go here */
+ .message-info {
+    color: indigo;
+    background-color: cornflowerblue;
+}
+.message-success {
+    color: green;
+    background-color: lightgreen;
+}
+.message-warning {
+    color: darkgoldenrod;
+    background-color: yellow;
+}
+.message-error {
+    color: darkred;
+    background-color: red;
+}
+
