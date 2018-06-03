@@ -13,7 +13,7 @@ body, html {
  /*
     Anything that should target ALL messages should be below
  */
-.message {
+message {
     margin: 10px;
     width: 100% 50%;
     border-radius: 5px;
