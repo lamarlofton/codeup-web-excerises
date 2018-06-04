@@ -3,8 +3,8 @@
     padding: 0;
 }
 
-body{
-    background-image: url("bridge.jpg");
+body {
+    /*background-image: url("/image/bridge.jpg");*/
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -30,7 +30,7 @@ body{
 h1{
     color: white;
     text-align: center;
-    font-family: "Raleway" ,SansSerif;
+    font-family: "Raleway", SansSerif;
     font-size: 70px;
 }
 

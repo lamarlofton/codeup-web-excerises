@@ -15,26 +15,34 @@ body, html {
  */
 message {
     margin: 10px;
-    width: 100% 50%;
-    border-radius: 5px;
+    width: 75% 50%;
+    border-radius: 10px;
     height: 30px;
+    padding: 5px;
+    border: 1px solid lightgray;
 }
 
  /* Anything specific to info should go here */
  .message-info {
     color: indigo;
     background-color: cornflowerblue;
+     margin-bottom: 10px;
+     top: 25px;
 }
 .message-success {
     color: green;
     background-color: lightgreen;
+    margin-bottom: 10px;
 }
 .message-warning {
     color: darkgoldenrod;
     background-color: yellow;
+    margin-bottom: 10px;
+
 }
 .message-error {
     color: darkred;
     background-color: red;
+    margin-bottom: 10px;
 }
 
