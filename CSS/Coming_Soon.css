@@ -1,26 +1,26 @@
 *{
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 body {
-    /*background-image: url("/image/bridge.jpg");*/
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
     background-attachment: fixed;
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: overlay;
 }
 
-.container{
+.container {
     top: 50%;
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
     color: #fff;
     text-align: center;
-    letter-spacing: 8px;
+    letter-spacing: 4px;
     text-transform: uppercase;
     animation-name: intro;
     animation-duration: 10s;
@@ -31,14 +31,14 @@ h1{
     color: white;
     text-align: center;
     font-family: "Raleway", SansSerif;
-    font-size: 70px;
+    font-size: 60px;
 }
 
 p{
     color: white;
     text-align: center;
     font-family: "Raleway" , SansSerif;
-    padding-top: 30px;
+    padding-top: 20px;
     border-top: 1px solid #fff;
     font-size: 40px;
 
@@ -46,6 +46,10 @@ p{
 
 h2 {
     text-align: left;
+    top: 10px;
+    color: white;
+
+
 }
 
 body {
@@ -59,4 +63,8 @@ body {
 @lamarlofton intro {
     from{opacity: 0}
     to{opacity: 1}
+}
+
+footer {
+    margin-bottom: auto;
 }
