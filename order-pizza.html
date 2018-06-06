@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Frist Bootstrap Project</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/order-pizza.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+<body>
+<nav class="navbar navbar-light bg-light justify-content-between">
+    <a class="navbar-brand">Pizza Word</a>
+    <form class="form-inline">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Order Online</button>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Menu</button>
+        <input class="form-control mr-sm-2" type="search" placeholder="ZipCode" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+</nav>
+    <div class="jumbotron">
+        <h1 class="display-4">Welcome To Pizza World!</h1>
+    </div>
+        <h2>Build Your Own pizza! <span class="badge badge-secondary">Pizza</span></h2>
+        <!--<div class="btn-group">-->
+            <!--<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Pizza Size</button>-->
+            <!--<div class="dropdown-menu">-->
+                 <!--<a class="dropdown-item" href="#">Small</a>-->
+                <!--<a class="dropdown-item" href="#">Medium</a>-->
+                <!--<a class="dropdown-item" href="#">Large</a>-->
+                <!--<a class="dropdown-item" href="#">XLarger</a>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="btn-group">-->
+         <!--<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Crust</button>-->
+         <!--<div class="dropdown-menu">-->
+             <!--<a class="dropdown-item" href="#">Pie Crust</a>-->
+             <!--<a class="dropdown-item" href="#">Flat Bread</a>-->
+             <!--<a class="dropdown-item" href="#">Stuff Crest</a>-->
+             <!--<a class="dropdown-item" href="#">Deep Dish</a>-->
+         <!--</div>-->
+        <!--</div>-->
+            <!--<div class="btn-group">-->
+             <!--<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Toppings</button>-->
+             <!--<div class="dropdown-menu">-->
+                 <!--<a class="dropdown-item" href="#">Cheese</a>-->
+                 <!--<a class="dropdown-item" href="#">Pepperoni</a>-->
+                 <!--<a class="dropdown-item" href="#">Meat Lovers</a>-->
+                 <!--<a class="dropdown-item" href="#">Veggies</a>-->
+             <!--</div>-->
+             <!--</div>-->
+                <!--<div class="btn-group">-->
+                 <!--<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Extra</button>-->
+            <!--<div class="dropdown-menu">-->
+                     <!--<a class="dropdown-item" href="#">Garlic Bread</a>-->
+                     <!--<a class="dropdown-item" href="#">Cheese Bread</a>-->
+                     <!--<a class="dropdown-item" href="#">Brownie Bites</a>-->
+                     <!--<a class="dropdown-item" href="#">Soda</a>-->
+            <!--</div>-->
+              <!--</div>-->
+    </div>
+</div>
+<!-- Main page content -->
+    <select class="custom-select custom-select-lg mb-3">
+        <option selected> Choose size and crust</option>
+        <option value="1">Small(10")</option>
+        <option value="2">Medium(12")</option>
+        <option value="3">Large(14")</option>
+    </select>
+    <select class="custom-select custom-select-sm">
+        <option selected>Choose Crust</option>
+        <option value="1">Hand Tossed</option>
+        <option value="2">Crispy Thin</option>
+        <option value="3">Deep Dish</option>
+    </select>
+    <select class="custom-select custom-select-lg mb-3">
+        <option selected> How Much Cheese?</option>
+        <option value="1">Light</option>
+        <option value="2">Regular</option>
+        <option value="3">Extra</option>
+        <option value="4">Double</option>
+    </select>
+    <select class="custom-select custom-select-lg mb-3">
+        <option selected>Choose Your Sauce</option>
+        <option value="1">Tomato Sauce</option>
+        <option value="2">Marinara Suace</option>
+        <option value="3">BBQ</option>
+        <option value="4">Alfredo Sauce</option>
+    </select>
+    <select class="custom-select custom-select-sm">
+        <option selected> How Much Sauce</option>
+        <option value="1">Light</option>
+        <option value="2">Normal</option>
+        <option value="3">Extra</option>
+        <option value="4">Double</option>
+    </select>
+        <h2>Toppings</h2>
+    <label class="container">Ham
+        <input type="checkbox">
+        <span class="checkmark"></span>
+    </label>
+    <label class="container">Bacon
+        <input type="checkbox">
+        <span class="checkmark"></span>
+    </label>
+    <label class="container">Beef
+        <input type="checkbox">
+        <span class="checkmark"></span>
+    </label>
+    <label class="container">Pepperoni
+        <input type="checkbox">
+        <span class="checkmark"></span>
+    </label>
+    <label class="container">Philly Steak
+        <input type="checkbox">
+        <span class="checkmark"></span>
+    </label>
+        <h2>Choose Non-Meats</h2>
+    <label class="container">Onions
+        <input type="checkbox">
+        <span class="checkmark"></span>
+    </label>
+    <label class="container">Mushrooms
+        <input type="checkbox">
+        <span class="checkmark"></span>
+    </label>
+    <label class="container">Green Peppers
+        <input type="checkbox">
+        <span class="checkmark"></span>
+    </label>
+    <label class="container">Jalepeno Peppers
+        <input type="checkbox">
+        <span class="checkmark"></span>
+    </label>
+    <div class="progress-bar" progress-bar-striped progress-bar-animated" style="width: 40%"></div>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- Your custom JS goes here -->
+    <!--<div class="alert alert-success">-->
+        <!--<strong>Succes!</strong> Indicates a successful or positive action-->
+    <!--</div>-->
+    <!--<div class="alert alert-info">-->
+    <!--<strong>Info!</strong> Indicates information is needed-->
+    <!--</div>-->
+    <!--<div class="alert alert-warning">-->
+    <!--<strong>Warning!</strong> Indicates something went wrong-->
+    <!--</div>-->
+    <a class="btn btn-primary btn-lg" href="#" role="button">Back to Top</a>
+    <div style="font-size:3em; color: cornflowerblue">
+        <i class="fas fa-shopping-cart">checkout</i>
+    </div>
+</body>
+</html>

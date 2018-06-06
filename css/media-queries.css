@@ -22,19 +22,19 @@ img {
     width: 100%;
 }
 
-@media screen and (min-width: 768px) {
-body {
-    background-color: #E74C3C;
-}
-    .hidden-on-desktop {
-        display: none;
-    }
-}
-@media sreen and (min-width: 992px) {
-body {
-    background-color: darkslategrey;
-}
-}
+/*@media screen and (min-width: 768px) {*/
+/*body {*/
+    /*background-color: #E74C3C;*/
+/*}*/
+    /*.hidden-on-desktop {*/
+        /*display: none;*/
+    /*}*/
+/*}*/
+/*@media sreen and (min-width: 992px) {*/
+/*body {*/
+    /*background-color: darkslategrey;*/
+/*}*/
+/*}*/
 
 li {
     border: white;
@@ -43,7 +43,7 @@ li {
     padding: 1em;
     list-style-type: none;
     text-align: center;
-    display: inline-block;
+    display: inline-grid;
     /*float: right;*/
     /*right: 100%;*/
 
@@ -85,6 +85,16 @@ ul {
 h2{
     font-stretch: extra-expanded;
     font-style: italic;
+}
+
+p {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+p > sub-section {
+    display: inline-grid;
+    grid-template-columns: auto;
 }
 
 
@@ -163,12 +173,20 @@ h2{
 .fa-facebook {
     background: #3B5998;
     color: white;
+    /*grid-template-columns: 1fr 1fr 1fr 1fr 1fr;*/
+    /*display: grid;*/
+    /*grid-template-rows: auto;*/
+    /*float: right;*/
 }
 
 /* Twitter */
 .fa-twitter {
     background: #55ACEE;
     color: white;
+    /*grid-template-columns: 1fr 1fr 1fr 1fr;*/
+    /*display: grid;*/
+    /*grid-template-rows: auto;*/
+    /*float: right;*/
 }
 
 
@@ -176,16 +194,27 @@ h2{
 .fa-google-plus {
     background: tomato;
     color: white;
+    /*grid-template-columns: 1fr;*/
+    /*display: grid;*/
+    /*grid-template-rows: auto;*/
+    /*float: right;*/
 }
 
 /* Twitter */
 .fa-twitter {
     background: #007bb6;
     color: white;
+    /*grid-template-columns: 1fr;*/
+    /*display: grid;*/
+    /*grid-template-rows: auto;*/
+    /*float: right;*/
 }
 
 /* Twitter */
 .fa-instagram {
     background: #fbad50;
     color: white;
+    /*grid-template-columns: 1fr;*/
+    /*display: grid;*/
+    /*grid-template-rows: auto;*/
 }
