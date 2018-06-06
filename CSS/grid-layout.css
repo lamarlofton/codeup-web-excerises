@@ -1,0 +1,96 @@
+* {
+    background-color: burlywood;
+    padding: 0;
+    width: 100%;
+    bottom: 10px;
+    float: end;
+
+}
+
+h1 {
+    top: 100px;
+    text-align: center;
+}
+
+.column {
+    padding: 10px;
+    grid-auto-flow: column;
+    width: 100%;
+    height: 2vh;
+    color: #848487;
+    margin: auto;
+}
+
+.column.one-half {
+    width: 100%;
+    border: 5px solid black;
+    text-align: center;
+    font-size: 25px;
+    float: end;
+
+}
+
+.column.one-third {
+    width: 100%;
+    border: 5px solid black;
+    font-size: 15px;
+    float: end;
+
+}
+
+.column.one-fourth {
+    width: 100%;
+    border: 5px solid black;
+    font-size: 20px;
+}
+
+.column.one-eight {
+    width: 100%;
+    border: 5px solid black;
+    font-size: 10px;
+    float: end;
+
+}
+
+
+.container {
+    display: grid;
+    /*background-color: midnightblue;*/
+    /*grid-column-gap: 50px;*/
+    grid-template-rows: auto auto;
+    /*margin: 0 auto;*/
+    width: 100%;
+    grid-template-columns: auto auto auto auto;
+    /*grid-gap: 10px;*/
+
+}
+
+.link {
+    display: grid;
+    /*background-color: darkslategrey;*/
+    /*grid-column-gap: 5px;*/
+    width: 100%;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+}
+
+.cookies {
+    /*background-color: #3B94D9;*/
+    grid-template-columns: 50px 50px 50px 50px;
+    width: 100%;
+    display: grid;
+    /*display: inline-grid;*/
+    grid-template-rows: auto auto auto auto;
+
+}
+
+
+.style {
+    display: grid;
+    /*background-color: #DDDDDD;*/
+    grid-template-columns: auto auto auto auto;
+    width: 100%;
+}
+
+
+
