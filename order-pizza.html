@@ -25,9 +25,12 @@
 </nav>
     <div class="jumbotron">
         <h1 class="display-4">Welcome To Pizza World!</h1>
-        <h2>Build Your Own pizza! <span class="badge badge-secondary">Pizza</span></h2>
-        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10"></div>
+        <!--<h2>Build Your Own pizza! <span class="badge badge-secondary">Pizza</span></h2>-->
+        <!--<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10"></div>-->
     </div>
+
+<h2>Build Your Own pizza! <span class="badge badge-secondary">Pizza</span></h2>
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10"></div>
         <!--<div class="btn-group">-->
             <!--<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Pizza Size</button>-->
             <!--<div class="dropdown-menu">-->
@@ -72,33 +75,55 @@
     <div class="row text-center padding">
         <div class="col-xs-12 col-sm-6 col-md-4">
     </div>
+        <div>
+            <hr class="my-4">
+        <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Size</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Crust</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Cheese</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Sauce</a>
+        </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Toppings</a>
+            </li>
+    </ul>
+        </div>
+        <input class="form-control" type="text" placeholder="Choose Size and Crust" readonly>
     <select class="custom-select custom-select-lg mb-3">
-        <option selected> Choose size and crust</option>
+        <option selected> Size</option>
         <option value="1">Small(10")</option>
         <option value="2">Medium(12")</option>
         <option value="3">Large(14")</option>
     </select>
-    <select class="custom-select custom-select-sm">
-        <option selected>Choose Crust</option>
+    <select class="custom-select custom-select-lg mb-3">
+        <option selected> Choose Crust</option>
         <option value="1">Hand Tossed</option>
         <option value="2">Crispy Thin</option>
         <option value="3">Deep Dish</option>
     </select>
     <select class="custom-select custom-select-lg mb-3">
-        <option selected> How Much Cheese?</option>
+        <option selected> How Much Cheese</option>
         <option value="1">Light</option>
         <option value="2">Regular</option>
         <option value="3">Extra</option>
         <option value="4">Double</option>
     </select>
+        <input class="form-control" type="text" placeholder="Choose Your Sauce" readonly>
     <select class="custom-select custom-select-lg mb-3">
-        <option selected>Choose Your Sauce</option>
+        <option selected>Sauce</option>
         <option value="1">Tomato Sauce</option>
         <option value="2">Marinara Suace</option>
         <option value="3">BBQ</option>
         <option value="4">Alfredo Sauce</option>
     </select>
-    <select class="custom-select custom-select-sm">
+    <select class="custom-select custom-select-lg mb-3">
         <option selected> How Much Sauce</option>
         <option value="1">Light</option>
         <option value="2">Normal</option>
@@ -106,6 +131,7 @@
         <option value="4">Double</option>
     </select>
 </div>
+    <input class="form-control" type="text" placeholder="Choose Your Toppings" readonly>
         <h2>Toppings</h2>
     <label class="container">Ham
         <input type="checkbox">
@@ -150,6 +176,7 @@
             <div id="fixed">
             </div>
         </div>
+        <!-- Fun Part! -->
     </figure>
     <button class="fun" data-toggle="collapse" data-target="emoji">click for fun</button>
     <div id="emoji" class="collapse">
@@ -159,7 +186,7 @@
             <img class="gif" src="img/gif/panda.gif">
         </div>
         <div class="col-sm-6 col-md-3">
-            <img class="gif" src="img/gif/poo.gif">
+            <img class="gif" src="https://giphy.com/gifs/3ohzdNwjApMs98ECKA/html5">
         </div>
         <div class="col-sm-6 col-md-3">
             <img class="gif" src="img/gif/unicorn.gif">
@@ -177,6 +204,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <!-- Your custom JS goes here -->
+
     <!--<div class="alert alert-success">-->
         <!--<strong>Succes!</strong> Indicates a successful or positive action-->
     <!--</div>-->
@@ -186,6 +214,16 @@
     <!--<div class="alert alert-warning">-->
     <!--<strong>Warning!</strong> Indicates something went wrong-->
     <!--</div>-->
+
+
+    <a class="btn btn-primary btn-lg" href="#" role="button">Back to Top</a>
+    <div style="font-size:3em; color: cornflowerblue">
+        <i class="btn btn-primary btn-block fas fa-shopping-cart"role="button">checkout</i>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <i class="fas fa-bold"></i>
+            <h3>poweredbyBOOTSTRAP</h3>
+        </div>
+    </div>
 
     <!-- Connect with us-->
     <div class="container-fluid padding">
@@ -201,14 +239,6 @@
                 <a href="#"><i class="fab fa-youtube"></i></a>
 
             </div>
-        </div>
-    </div>
-    <a class="btn btn-primary btn-lg" href="#" role="button">Back to Top</a>
-    <div style="font-size:3em; color: cornflowerblue">
-        <i class="fas fa-shopping-cart">checkout</i>
-        <div class="col-xs-12 col-sm-6 col-md-4">
-            <i class="fas fa-bold"></i>
-            <h3>BOOTSTRAP</h3>
         </div>
     </div>
     <!---footer ---->

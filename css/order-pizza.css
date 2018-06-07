@@ -19,10 +19,30 @@ html, body {
     font-size: 1.1em !important;
 }
 
+.form-control {
+    width: 100%;
+    font-weight: bold;
+    color: #E74C3C;
+}
+
+h2 {
+    font-family:
+}
+.nav-tabs {
+    padding: 1rem;
+    float: left;
+    width: 500%;
+}
+
 footer {
     background-color: #3f3f3f;
     color: #d5d5d5;
     padding-top: 2rem;
+}
+
+.alert {
+    opacity: .5;
+    overflow: hidden;
 }
 
 hr.light {
