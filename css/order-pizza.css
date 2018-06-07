@@ -25,9 +25,25 @@ html, body {
     color: #E74C3C;
 }
 
-h2 {
-    font-family:
+#Heading-under-banner {
+    font-family: "American Typewriter";
+    padding: 1px 10px 1px 10px;
+    text-shadow: 2px 2px 8px #FF0000;
+    margin: 5px 1px 5px 1px;
+
 }
+
+h2 {
+    background-color: #3b5998;
+    font-family: "American Typewriter";
+    font-size: 25px;
+}
+
+.badge-secondary {
+    color: tomato;
+}
+
+
 .nav-tabs {
     padding: 1rem;
     float: left;
@@ -100,6 +116,7 @@ hr.light-100 {
     padding: 1rem;
     border-radius: 0;
     background-image: url("../image/pizza.png");
+    background-size: cover;
 
 }
 
@@ -120,6 +137,11 @@ hr.light-100 {
 
 .gif {
     max-width: 100%;
+}
+
+.checkout-button {
+    float: right;
+    top: 200%;
 }
 
 h1 {

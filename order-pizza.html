@@ -23,14 +23,15 @@
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
 </nav>
-    <div class="jumbotron">
+    <div class="jumbotron d-none d-md-block">
         <h1 class="display-4">Welcome To Pizza World!</h1>
+
         <!--<h2>Build Your Own pizza! <span class="badge badge-secondary">Pizza</span></h2>-->
         <!--<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10"></div>-->
     </div>
-
-<h2>Build Your Own pizza! <span class="badge badge-secondary">Pizza</span></h2>
+<h2 id="Heading-under-banner">Build Your Own pizza! <span class="badge badge-secondary">Pizza</span></h2>
 <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10"></div>
+
         <!--<div class="btn-group">-->
             <!--<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Pizza Size</button>-->
             <!--<div class="dropdown-menu">-->
@@ -183,10 +184,10 @@
     <div class="container-fluid padding">
     <div class="row text-center">
         <div class="col-sm-6 col-md-3">
-            <img class="gif" src="img/gif/panda.gif">
+            <img class="gif" src="https://giphy.com/gifs/13WaBvWaWkAqGc/html">
         </div>
         <div class="col-sm-6 col-md-3">
-            <img class="gif" src="https://giphy.com/gifs/3ohzdNwjApMs98ECKA/html5">
+            <img class="gif" src="https://media.giphy.com/media/13WaBvWaWkAqGc/giphy.gif">
         </div>
         <div class="col-sm-6 col-md-3">
             <img class="gif" src="img/gif/unicorn.gif">
@@ -218,7 +219,9 @@
 
     <a class="btn btn-primary btn-lg" href="#" role="button">Back to Top</a>
     <div style="font-size:3em; color: cornflowerblue">
-        <i class="btn btn-primary btn-block fas fa-shopping-cart"role="button">checkout</i>
+        <div class="checkout-button">
+            <i class="btn btn-primary btn-md fas fa-shopping-cart" role="button">checkout</i>
+        </div>
         <div class="col-xs-12 col-sm-6 col-md-4">
             <i class="fas fa-bold"></i>
             <h3>poweredbyBOOTSTRAP</h3>
@@ -230,6 +233,7 @@
         <div class="row text-center padding">
             <div class="col-12">
                 <h2>Connect</h2>
+                <hr class="my-4">
             </div>
             <div class="col-12 social padding">
                 <a href="#"><i class="fab fa-facebook"></i></a>
@@ -277,5 +281,8 @@
             </div>
         </div>
     </footer>
+
+    <!-- Scripts should go here, this improves page loading speed -->
+
 </body>
 </html>
