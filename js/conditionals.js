@@ -15,27 +15,27 @@
  *
  * Can you refactor your code to use functions?
  */
-var confirmed = confirm('Would you like to enter a number?');
-console.log(confirmed);
-
-var userInput = parseInt( prompt('Please enter a number!'));
-console.log('The user entered: ' + userInput);
-
-if (userInput % 2 === 0) {
-    alert ('numberIsEven');
-} else if(userInput === 'Negative') {
-    alert('The number plus 100: ' + (userInput + 100));
-} else {
-    alert('numberIsNegative');
-}
-
-function userInput() {
-    console.log(parseInt('userInput + 100'));
-}
-
-userInput();
-
-
+    // var confirmed = confirm('Would you like to enter a number?');
+    // console.log(confirmed);
+    //
+    // var userInput = parseInt( prompt('Please enter a number!'));
+    // console.log('The user entered: ' + userInput);
+    //
+    // if (userInput % 2 === 0) {
+    //     alert ('numberIsEven');
+    // } else if(userInput === 'Negative') {
+    //     alert('The number plus 100: ' + (userInput + 100));
+    // } else {
+    //     alert('numberIsNegative');
+    // }
+    //
+    // function userInput() {
+    //     console.log(parseInt('userInput + 100'));
+    // }
+    //
+    //         userInput();
+    //
+    //
 
 /* ########################################################################## */
 
@@ -57,20 +57,20 @@ userInput();
  * console.logging the function's return value
  */
 
-// function analyzeColor(confirmed) {
+// function analyzeColor(color) {
 //
-//     if (confirmed === 'blue') {
-//         alert('blue is the color of the sky');
+//     if (color === 'blue') {
+//         return color + ' blue is the color of the sky';
 //
-//     } else if (confirmed === 'red') {
-//         alert('Strawberries are red');
+//     } else if (color === 'red') {
+//         return color + ' Strawberries are red';
 //
-//     } else if (confirmed === 'cyan') {
-//         alert('I don\'t know anything about cyan');
+//     } else if (color == 'cyan') {
+//         return color + ' I don\'t know anything about cyan';
 //
 //     } else
 //         (console.log('That color does not match'));
-// }
+//
 //
 // var color = prompt('Can I have your favorite color?');
 //
@@ -78,17 +78,25 @@ userInput();
 //         alert('Nice!!!');
 //         console.log(color);
 //
-//         var confirmed = prompt('What\'s your favorite color?');
-//         console.log(confirmed);
+//         var color = prompt('What\'s your favorite color?');
+//         console.log(color);
 //
-//         analyzeColor(confirmed);
+//         analyzeColor(color);
 //
 //     } else if (color == 'no') {
 //         alert('Darn');
 //     } else {
-//         alert('Canceled!');
-//     }
-//
+//         return 'That\'s not a valid color';
+// }
+// }
+// console.log(analyzeColor('blue'));
+// console.log(analyzeColor('red'));
+// console.log(analyzeColor('cyan'));
+// console.log(analyzeColor());
+// console.log(analyzeColor(null));
+// console.log(analyzeColor(1));
+// console.log(analyzeColor(true));
+// console.log(analyzeColor(''));
 
 
 // Don't change the next two lines!
@@ -96,27 +104,31 @@ userInput();
 // - `colors`: a list of the colors of the rainbow
 // - `randomColor`: contains a single random color value from the list (this
 //                  will contain a different color everytime the page loads)
-// var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
-// var randomColor = colors[Math.floor(Math.random() * colors.length)];
+//      var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+//     var randomColor = colors[Math.floor(Math.random() * colors.length)];
 //
-//     function rainbow(randomColor) {
-//         return colors;
-// }
-//     console.log(randomColor);
+//         function rainbow(randomColor) {
+//             return colors;
+//     }
+//         console.log('The user entered: ' + rainbow(randomColor));
 //
-// var color = prompt("What other color do you like?");
+//     var rainbow = prompt("What other color do you like?");
+//     // console.log(confirmed);
 //
-// switch(rainbow()) {
-//     case "All kinds of colors":
-//         alert("What a coincidence, that's my favorite!");
-//         break;
-//     case "blue":
-//         alert("Just blue Okay...");
-//         break;
-//     default:
-//         alert("Red" + " isn't my favorite, ill wear it though!");
-//         break;
-// }
+//     switch(rainbow) {
+//         case "blue":
+//             alert("What a coincidence, that's my favorite!");
+//             break;
+//         case "red":
+//             alert("To bright for me...");
+//             break;
+//         case "cyan":
+//             alert('I don\'t know anything about cyan');
+//             break;
+//         default:
+//             alert(rainbow + ' isn\'t my favorite, ill wear it though!');
+//             break;
+//     }
 /**
  *
  * TODO:
@@ -165,5 +177,52 @@ userInput();
  * and alerts to display to the user what their lucky number was, what their
  * price before the discount was, and what their price after the discount is.
  */
+
 // Generate a random number between 0 and 6
-// var luckyNumber = Math.floor(Math.random() * 6);
+
+    // var userInput = prompt('What is your total bill?');
+    //     console.log('Great today we are doing a lucky number raffold!');
+    var luckyNumber = Math.floor(Math.random() * 6);
+    // console.log('The user entered: ' + userInput);
+    // alert('Your Total is: ' + userInput);
+    //      alert('Here is your lucky number: ' + luckyNumber);
+
+    function calculateTotal(luckyNumber, Total) {
+        var discountedPrice;
+
+        // return discountedPrice;
+
+        switch(luckyNumber) {
+            case 0:
+                discountedPrice = Total;
+                break;
+            case 1:
+               discountedPrice = Total * (0.90);
+                break;
+            case 2:
+                discountedPrice = Total * (0.75);
+                break;
+            case 3:
+                discountedPrice = Total * (0.65);
+                break;
+            case 4:
+                discountedPrice = Total * (0.5);
+                break;
+            case 5:
+                discountedPrice = 0;
+                break;
+            default:
+                discountedPrice = 'Invaild lucky number';
+                break;
+        }
+    // return total;// return sum of elements in array
+    //     alert('You total was ' + userInput);
+    return discountedPrice;
+}
+luckyNumber = Math.floor(Math.random() * 6);
+    console.log(luckyNumber);
+console.log(calculateTotal(luckyNumber, 100));
+
+luckyNumber = Math.floor(Math.random() * 6);
+console.log(luckyNumber);
+console.log(calculateTotal(luckyNumber, 200));
