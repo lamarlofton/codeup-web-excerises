@@ -11,7 +11,7 @@
 
 
 // for (var i = 0; i < 10; i++) {
-//     console.log('for loop iteration #' + i);
+    // console.log('for loop iteration #' + i);
 // }
 
 
@@ -49,10 +49,10 @@
 // }
 
 
-for (var i = 1; i<=9; i +=1) {
-    var output = "";
-    for (var j = 1; j <= i; j += 1){
-        output += i;
-    }
-    console.log(output);
-}
+// for (var i = 1; i<=9; i +=1) {
+//     var output = "";
+//     for (var j = 1; j <= i; j += 1){
+//         output += i;
+//     }
+//     console.log(output);
+// }
