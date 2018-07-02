@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Konami Code</title>
+</head>
+<body>
+<h1>Konami Code</h1>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<div id="user_action"></div>
+<script src="/js/jquery.js"></script>
+<script>
+    "use strict";
+
+    $(document).keyup(function(event){
+        console.log(event.keyCode);
+    });
+
+    $('body').hover(
+        function() {
+            $(this).css('background-color', 'blue');
+        },
+        function() {
+            $(this).css('background-color', 'purple');
+        }
+    );
+</script>
+
+<style>
+    .className {
+        position: fixed;
+        width: 60%;
+        height: 60%;
+        left: 50%;
+        bottom: 30px;
+        background-position: 150px;
+        z-index: 9000;
+    }
+</style>
+
+<div class="className">
+
+<script type="text/javascript">
+    if ( window.addEventListener ) {
+        var kkeys = [], konami = "38,38,40,40,37,39,37,39,66,65";
+        window.addEventListener("keydown", function(e) {
+            kkeys.push( e.keyCode );
+            if ( kkeys.toString().indexOf( konami ) >= 0 ) {
+                alert("What Happen");
+                $("<a href='../controlleur/page_ajouter.php'><img src='https://thumbs.gfycat.com/ShowyEthicalLemur-max-1mb.gif'/a>").insertAfter($('#user_action'));
+                $("<a href='../controlleur/page_ajouter.php'><img src='https://media1.tenor.com/images/65619faeba9edf644a26bd89e67abb32/tenor.gif?itemid=5020276'/a>").insertAfter($('#user_action'));
+                $("<a href='../controlleur/page_ajouter.php'><img src='http://static.comicvine.com/uploads/original/11120/111208372/4804526-6298517601-Raide.gif'/a>").insertAfter($('#user_action'));
+                $("<a href='../controlleur/page_ajouter.php'><img src='https://giant.gfycat.com/ScrawnyWeirdBarnacle.gif'/a>").insertAfter($('#user_action'));
+
+                $("<a href='../controlleur/page_ajouter.php'><img src='https://media.giphy.com/media/4hnQDVKVARZ6w/giphy.gif'/a>").insertAfter($('#user_action'));
+                $("<a href='../controlleur/page_ajouter.php'><img src='https://media2.giphy.com/media/mAUD17ZLISDXG/giphy.gif'/a>").insertAfter($('#user_action'));
+                $("<a href='../controlleur/page_ajouter.php'><img src='http://i0.kym-cdn.com/photos/images/original/000/648/251/771.gif'/a>").insertAfter($('#user_action'));
+                $("<a href='../controlleur/page_ajouter.php'><img src='https://thumbs.gfycat.com/MedicalPeacefulGalapagossealion-size_restricted.gif'/a>").insertAfter($('#user_action'));
+                $("<a href='../controlleur/page_ajouter.php'><img src='https://uproxx.files.wordpress.com/2012/08/layla_dance_butt_attack.gif?w=650'/a>").insertAfter($('#user_action'));
+<div style='display:none;'>
+
+</div>
+
+                kkeys.length = 0;
+
+
+            }
+        }, true);
+    }
+</script>
+
+</div>
+
+
+
+</body>
+</html>

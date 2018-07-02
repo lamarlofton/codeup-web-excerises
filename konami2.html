@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lamar's Konami</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="/js/konami.js"></script>
+    <style>
+        .className {
+            content: url("https://media.giphy.com/media/4hnQDVKVARZ6w/giphy.gif");
+            position: fixed;
+            width: 50%%;
+            height: 50%%;
+            left: 50%;
+            bottom: 30px;
+            background-position: 150px;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+<div class="className">
+    <img src "https://media.giphy.com/media/4hnQDVKVARZ6w/giphy.gif" style="display:none" alt=""/>
+</div>
+<script>
+    // <!-- KONAMI -->
+    // Single line comments are done with 2 forward slashes
+    /*
+        Multi line comments are done with forward slash and asterisk
+    */
+    var secret = "3838404037393739666513" //Konami Code
+    var input = ""
+    var timer
+    var mode = false
+    var showcaseName = false
+    $(document).ready(function () {
+        var className = $('.className')
+        var horizontal = className.css('background-position-x')
+        var flag = 0
+        var scroll = 23
+        $('#flash').hide()
+        setInterval(function () {
+            $('#info').html('Keystroke:' + input)
+        }, 100)
+        className.css("left", walking + "%")
+        console.log(walking)
+        $(document).on("scroll", function () {
+            if (showclassName == true) {
+                var scroll = $(document).scrollTop()
+                walking = walking - 1
+                className.css("left", walking + "%")
+                if (walking == -10) {
+                    walking = 110
+                }
+                // This would be better suited for a switch case
+                if (scroll % 3 == 0) {
+                    if (horizontal == "0px") {
+                        className.css("background-position-x", "-65px")
+                        horizontal = className.css('background-position-x')
+                    } else if ((horizontal == "-65px") && (flag == 0)) {
+                        className.css("background-position-x", "-130px")
+                        horizontal = className.css('background-position-x')
+                        flag = 1
+                    } else if ((horizontal == "-65px") && (flag == 1)) {
+                        className.css("background-position-x", "0px")
+                        horizontal = className.css('background-position-x')
+                        flag = 0
+                    } else if (horizontal == "-130px") {
+                        className.css("background-position-x", "-65px")
+                        horizontal = className.css('background-position-x')
+                    }
+                }
+            }
+        })
+        $(document).keyup(function (e) {
+            //alert(e.which)
+            input += e.which
+            clearTimeout(timer)
+            timer = setTimeout(function () {
+                input = ""
+            }, 500)
+            check_input()
+        })
+        function check_input() {
+            if (input === secret) {
+                //the secret code
+                showclassName = true
+            }
+        }
+        $(function () { // this function setup is exactly the same at the document.ready function. This is the shorthand way
+        })
+    })
+</script>
+</body>
+</html>
