@@ -1,0 +1,30 @@
+h1 {
+    text-align: center;
+    color: #349808;
+}
+.invisible {
+    display: none;
+}
+
+.highlighted {
+color: yellow;
+}
+
+.cursive {
+    font-style: italic;
+}
+
+h3 {
+    text-align: justify;
+    text-shadow: 5px,  #349808;
+    font-size:16px;
+}
+
+img {
+    width: 200px;
+    heigth: 300px;
+}
+
+/*.special {*/
+    /*color: yellowgreen;*/
+/*}*/
