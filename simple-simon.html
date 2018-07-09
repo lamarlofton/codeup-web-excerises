@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Simon</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/simple-simon.css">
+    <style ></style>
+</head>
+<body>
+
+<div class="simon-center">
+
+    <div id="cdTimer" class="countdown hide">4</div>
+    <div id="gameOver" class="gameover hide">
+        <h1>GAME OVER</h1>
+        <h4>Score: <span id="go-score">0</span></h4>
+
+        <div class="">
+            <input type="text" maxlength="3" name="initials" id="initials" placeholder="ABC">
+            <button id="addScore"><i class="material-icons">keyboard_return</i></button>
+        </div>
+
+        <button id="retry">Retry <i class="material-icons">redo</i></button>
+        <div class="text-center">  <table class="table text-center  table-hover table-striped scoreboard">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Score</th>
+            </tr>
+
+            </thead>
+            <tbody id="scoresList">
+            <tr>
+                <td>ABC</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>ABC</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>ABC</td>
+                <td>12</td>
+            </tr>
+
+            </tbody>
+        </table></div>
+
+    </div>
+
+
+    <div class="simon-game">
+        <div class="full-circle">
+            <div id="green" class="semi-circle"></div>
+            <div id="red" class="semi-circle"></div>
+            <div id="yellow" class="semi-circle"></div>
+            <div id="blue" class="semi-circle"></div>
+        </div>
+    </div>
+
+    <div id="center-circle">
+
+        <p class="simon-text"><span class="small">Simple</span> SIMON</p>
+        <div class="row">
+            <div class="half">
+                <div id="simon-counter">0</div>
+            </div>
+            <div class="half">
+                <button id="start-btn" class="led-green"></button>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+<div id="highScore" class="scoreup">
+
+
+    <p>SCOREBOARD</p>
+    <div class="negativeScore">0</div>
+    <div id="scoreCurrent" class="currentScore">&nbsp;</div>
+    <span class="currScoreTxt">0</span>
+</div>
+
+<footer>
+
+    <div class="left">
+        <i class="material-icons">insert_emoticon</i> <a href="https://en.wikipedia.org/wiki/Simon_(game)">The Classic</a>
+    </div>
+
+
+    <div class="right">
+        <p><i class="material-icons"> create</i>Created by LaMarLofton <i class="material-icons">email</i> lamarlofton55@gmail.com</p>
+
+    </div>
+
+
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src='https://cdn.rawgit.com/admsev/jquery-play-sound/master/jquery.playSound.js'></script>
+
+<script src="js/simple-simon.js"></script>
+
+
+</body>
+</html>

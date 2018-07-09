@@ -1,0 +1,58 @@
+* {
+    margin-left: 5px;
+}
+
+h1 {
+    text-align: center;
+    color: #349808;
+}
+.invisible {
+    display: none;
+}
+
+.highlighted {
+    color: yellow;
+}
+
+.cursive {
+    font-style: italic;
+}
+
+h3 {
+    text-align: justify;
+    text-shadow: 5px,  #349808;
+    font-size:16px;
+    color: blue;
+}
+
+img {
+    width: 300px;
+    heigth: 400px;
+
+}
+
+ul {
+    display: none;
+}
+
+
+/*#Gallery {*/
+    /*width: 50px;*/
+    /*height: 100px;*/
+/*}*/
+
+
+.picture1 {
+    background-image: url("#rock");
+    background-size: cover;
+}
+
+.picture2 {
+    background-image: url('#skies');
+    background-size: cover;
+}
+
+.picture3 {
+    background-image: url('#workshop');
+    background-size: cover;
+}
