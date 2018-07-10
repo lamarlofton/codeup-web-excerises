@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/ajax-store.css"/>
+        <title>Ajax Online Store</title>
+
+    </head>
+    <body>
+
+        <h1>My Tool Store</h1>
+
+        <h3>Hardware Store</h3>
+
+        <table id="products">
+            <thead>
+            <tr>
+                <th>Title</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Categories</th>
+            </tr>
+            </thead>
+            <tbody id="insertProducts"></tbody>
+        </table>
+
+        <h4>Add Tools</h4>
+        <p>Name: <input type="text" id="name"></p>
+        <p>Quantity: <input type="text" id="quantity"></p>
+        <p>Price: <input type="text" id="price"></p>
+        <p>Categories: <input type="text" id="categories"></p>
+        <button id="Add">Add Tools</button>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="js/ajax-store.js"></script>
+
+
+    </body>
+</html>
