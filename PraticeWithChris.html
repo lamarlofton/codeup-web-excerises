@@ -1,10 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
 </head>
 <body>
-$END$
+
+<h1>black and white version</h1>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, rem, tenetur. Error mollitia, veritatis. Aliquam dignissimos distinctio dolor facilis, harum inventore ipsam molestias sint tempore voluptatum? Aliquam eum ipsa sit?</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam beatae consequuntur cumque dicta eligendi est explicabo ipsam iste iusto laudantium, minus placeat provident ratione tenetur unde veniam voluptate voluptates voluptatibus.</p>
+
+<button id="btnToClick">Give Me Color</button>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+<script>
+    'use strict';
+    (function(){
+        var btnToClick = document.getElementById('btnToClick');
+        console.log(btnToClick);
+
+       $('#btnToClick').click(function() {
+           var h1Content = $('h1');
+           h1Content.css('color', 'blue');
+           h1Content.text('Colored Version')
+           $(this).text('Black and White')
+           $('p').css('color', 'purple').css('background-color','papayawhip')
+           $('body').css('background-color', 'grey')
+
+
+        })
+
+
+    })();
+
+</script>
+
 </body>
 </html>
