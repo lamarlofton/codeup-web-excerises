@@ -1,0 +1,77 @@
+* {
+    navbutton_background_color: black;
+}
+
+
+
+
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: black;
+    background-color: black;
+}
+
+.navbar-nav li a:hover {
+    color: #1abc9c !important;
+
+}
+
+.weather-app{
+    width: 250px;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 1px solid black;
+    background-color: skyblue;
+    /*height: 325px;*/
+}
+
+.weatherCard{
+    width: 30%;
+    float: left;
+    /*height: 210px;*/
+    margin-left: 2%;
+    background-color: aliceblue;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 10px;
+    font-style: italic;
+}
+
+
+#map-canvas{
+    margin-top: 50px;
+    width: 70%;
+    height: 400px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+
+div.row {
+    margin: 25px;
+
+}
+div.card {
+    padding: 10px;
+    width: 0;
+    margin: 5px;
+    border: solid #BADA55;
+    left: 200px;
+}
+
+div.Day1 {
+    display: inline-block;
+    text-align: center;
+
+
+}
+
+#weather-panels {
+    text-align: justify-all;
+}

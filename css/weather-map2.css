@@ -1,0 +1,32 @@
+.weather{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 1px solid black;
+    background-color: skyblue;
+    height: 325px;
+}
+h3{
+    margin-left: 5%;
+}
+h5{
+    margin-left: 2%;
+}
+.weatherBox{
+    width: 30%;
+    float: left;
+    height: 210px;
+    margin-left: 2%;
+    background-color: aliceblue;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 10px;
+    font-style: italic;
+}
+#map-canvas{
+    margin-top: 50px;
+    width: 70%;
+    height: 400px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
